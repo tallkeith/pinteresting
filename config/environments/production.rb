@@ -94,6 +94,6 @@ Rails.application.configure do
       :secret_access_key => ENV['AWS_SECRET_KEY']
     }
   }
-  config.assets.precompile += %w( .svg .eot .woff .ttf )
   
+  config.assets.compile = true
 end
