@@ -22,6 +22,6 @@ end
 group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
-	gem 'aws-sdk', '~> 1.20.0'
+	gem 'aws-sdk', '~> 1.52.0'
 end
 
