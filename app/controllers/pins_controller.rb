@@ -29,8 +29,9 @@ class PinsController < ApplicationController
 
   def update
     if @pin.update(pin_params)
-      redirect_to @pin, notice: 'Pin was successfully updated.'
+      
       render :show, status: :ok, location: @pin
+
     else
       render :edit
       render json: @pin.errors, status: :unprocessable_entity
